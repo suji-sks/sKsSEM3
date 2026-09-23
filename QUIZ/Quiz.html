@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz (Assignment 1) </title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+
+<body>
+
+    <!-- LOGIN PAGE -->
+    <div id="loginPage" class="container">
+
+        <h1>Online Quiz</h1>
+        <p>Login to start your test</p>
+
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <button onclick="login()">Login</button>
+
+    </div>
+
+
+    <!-- QUIZ PAGE -->
+    <div id="quizPage" class="container hidden">
+
+        <h1>Online Test</h1>
+
+        <p id="welcome"></p>
+
+        <!-- Question Tabs -->
+        <div class="question-tabs">
+            <button onclick="showQuestion(0)">1</button>
+            <button onclick="showQuestion(1)">2</button>
+            <button onclick="showQuestion(2)">3</button>
+            <button onclick="showQuestion(3)">4</button>
+            <button onclick="showQuestion(4)">5</button>
+            <button onclick="showQuestion(5)">6</button>
+            <button onclick="showQuestion(6)">7</button>
+            <button onclick="showQuestion(7)">8</button>
+            <button onclick="showQuestion(8)">9</button>
+            <button onclick="showQuestion(9)">10</button>
+        </div>
+
+        <h2 id="questionNumber"></h2>
+
+        <h3 id="question"></h3>
+
+        <div id="options"></div>
+
+        <br>
+
+        <button onclick="previousQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+
+        <br><br>
+
+        <button onclick="submitQuiz()">Submit Test</button>
+
+    </div>
+
+
+    <!-- RESULT PAGE -->
+    <div id="resultPage" class="container hidden">
+
+        <h1>Quiz Result</h1>
+
+        <h2 id="result"></h2>
+
+        <p id="percentage"></p>
+
+        <button onclick="viewAnswers()">View Answers</button>
+
+        <button onclick="restartQuiz()">Retake Quiz</button>
+
+        <div id="answerReview"></div>
+
+    </div>
+
+
+    <script src="Quiz.js"></script>
+
+</body>
+</html>

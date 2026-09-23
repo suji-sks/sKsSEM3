@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+
+.container {
+    width: 600px;
+    max-width: 90%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* Hide pages */
+
+.hidden {
+    display: none;
+}
+
+/* Heading */
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #444;
+}
+
+h3 {
+    color: #333;
+    text-align: left;
+}
+
+/* Input */
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+
+button {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Question tabs */
+
+.question-tabs {
+    margin: 20px 0;
+}
+
+.question-tabs button {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background-color: #777;
+}
+
+/* Options */
+
+.option {
+    display: block;
+    text-align: left;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fafafa;
+}
+
+.option:hover {
+    background-color: #eeeeee;
+}
+
+/* Correct answer */
+
+.correct {
+    background-color: #b7f7c5 !important;
+    border: 2px solid green;
+}
+
+/* Wrong answer */
+
+.wrong {
+    background-color: #ffb8b8 !important;
+    border: 2px solid red;
+}
+
+/* Result */
+
+#result {
+    color: #2563eb;
+    font-size: 30px;
+}
+
+#percentage {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Answer review */
+
+.review {
+    text-align: left;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.review-correct {
+    color: green;
+}
+
+.review-wrong {
+    color: red;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .container {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .question-tabs button {
+        width: 35px;
+        height: 35px;
+        padding: 3px;
+    }
+
+}

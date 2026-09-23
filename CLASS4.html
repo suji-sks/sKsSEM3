@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Management System</title>
+</head>
+
+<script>
+
+    function calculateTotal(num1,num2,num3,num4,num5)
+    {
+        return num1+num2+num3+num4+num5;
+
+    }
+    function calculatePercentage(total)
+    {
+        return total/5;
+    }
+    function calculateGrade(Percentage)
+    {
+        if (percentage >= 90)
+        return "A+";
+    else if (percentage >= 80)
+        return "A";
+    else if (percentage >= 70)
+        return "B";
+    else if (percentage >= 60)
+        return "C";
+    else if (percentage >= 50)
+        return "D";
+    else
+        return "Fail";
+    }
+    let name = prompt("Enter Student Name:");
+    let rollNo = prompt("Enter Roll Number:");
+
+    let marks1 = Number(prompt("Enter Marks in Subject 1:"));
+    let marks2 = Number(prompt("Enter Marks in Subject 2:"));
+    let marks3 = Number(prompt("Enter Marks in Subject 3:"));
+    let marks4 = Number(prompt("Enter Marks in Subject 4:"));
+    let marks5 = Number(prompt("Enter Marks in Subject 5:"));
+    let marks6 = Number(prompt("Enter Marks in Subject 6:"));
+
+
+    let total = calculateTotal(marks1, marks2, marks3, marks4, marks5);
+    let percentage = calculatePercentage(total);
+    let grade = calculateGrade(percentage);
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>
